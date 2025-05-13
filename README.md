@@ -1,3 +1,4 @@
-SEGUNDA ENTREGA PROYECTO BACKEND 1 - CODERHOUSE
-Ejecutar en la consola: nodemon src/app.js
-Ingresar al navegador y escribir la url: http://localhost:8080/realtimeproducts
+
+# Segunda entrega Proyecto Backend Avanzado 1
+
+En la consola de visual studio code ejecutar: nodemon src/app.js y en el navegador escribir http://localhost:8080/realtimeproducts
