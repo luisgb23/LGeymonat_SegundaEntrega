@@ -38,5 +38,18 @@
     "thumbnails": [
       "https://www.pccompu.com.uy/imgs/productos/productos34_56163.jpg"
     ]
+  },
+  {
+    "id": 4,
+    "title": "Monitor LG",
+    "description": "Monitor LG led",
+    "code": "1134",
+    "price": 8000,
+    "stock": 3,
+    "status": true,
+    "category": "Monitores",
+    "thumbnails": [
+      "https://www.pccompu.com.uy/imgs/productos/productos34_56163.jpg"
+    ]
   }
 ]

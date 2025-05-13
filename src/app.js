@@ -21,7 +21,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '/src/public')));
 
-// Handlebars
 app.engine('handlebars', handlebars.engine());
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, '/src/views'));
@@ -33,16 +32,12 @@ app.use('/', viewsRouter(productManager));
 
 console.log('Vistas buscadas en:', path.join(__dirname, '/src/views'));
 
-
-// Socket.io
 io.on('connection', async socket => {
   console.log('Cliente conectado por socket');
 
-  // Enviar productos iniciales
   const productos = await productManager.getProducts();
   socket.emit('updateProducts', productos);
 
-  // Agregado desde el frontend por formulario
   socket.on('addProduct', async product => {
     await productManager.addProduct(product);
     const productosActualizados = await productManager.getProducts();
